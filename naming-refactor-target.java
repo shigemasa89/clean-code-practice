@@ -1,14 +1,14 @@
-int d = 0;
-d = p1 + p2;
-d = d - ((d1 + d2) / 2);
-if (d < 0) {
-    d = 0;
+int damage_amount = 0;
+damage_amount = player_base_attack + weapon_attack;
+damage_amount = damage_amount - ((enemy_base_attack + enemy_armor_defense) / 2);
+if (damage_amount < 0) {
+    damage_amount = 0;
 }
 
 /*
-d ダメージ量
-p1 プレイヤー本体の攻撃力
-p2 プレイヤーの武器の攻撃力
-d1 敵本体の攻撃力
-d2 敵の防具の防御力
+damage_amount ダメージ量
+player_base_attack プレイヤー本体の攻撃力
+weapon_attack プレイヤーの武器の攻撃力
+enemy_base_attack 敵本体の攻撃力
+enemy_armor_defense 敵の防具の防御力
  */
